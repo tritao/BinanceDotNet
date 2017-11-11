@@ -147,7 +147,7 @@ namespace BinanceExchange.API.Websockets
                     }
                 };
             };
-            ActiveWebSockets.TryAdd(websocket.Id, websocket);
+            ActiveWebSockets.Add(websocket.Id, websocket);
             AllSockets.Add(websocket);
             websocket.SslConfiguration.EnabledSslProtocols = SupportedProtocols;
             websocket.Connect();
@@ -181,7 +181,7 @@ namespace BinanceExchange.API.Websockets
                     }
                 };
             };
-            ActiveWebSockets.TryAdd(websocket.Id, websocket);
+            ActiveWebSockets.Add(websocket.Id, websocket);
             AllSockets.Add(websocket);
             websocket.SslConfiguration.EnabledSslProtocols = SupportedProtocols;
             websocket.Connect();
